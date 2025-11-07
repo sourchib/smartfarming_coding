@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFarm AI - Solusi Pertanian Modern</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-gray-100">
+
+    <!-- 1. Header / Navbar -->
+    <header class="bg-white shadow-md py-4">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="logonavbar.png" alt="SmartFarm AI Logo" class="h-10 mr-2">
+                <span class="text-2xl font-bold text-green-700">SmartFarm AI</span>
+            </div>
+            <!-- Hamburger menu for mobile -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop menu -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#" class="text-gray-700 hover:text-green-700">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-green-700">Features</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-green-700">Dashboard</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-green-700">About / Contact</a></li>
+                <li><a href="#" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Login / Register</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pt-2 pb-4 shadow-md">
+            <ul class="flex flex-col space-y-2">
+                <li><a href="#" class="block text-gray-700 hover:text-green-700 py-2">Home</a></li>
+                <li><a href="#" class="block text-gray-700 hover:text-green-700 py-2">Features</a></li>
+                <li><a href="#" class="block text-gray-700 hover:text-green-700 py-2">Dashboard</a></li>
+                <li><a href="#" class="block text-gray-700 hover:text-green-700 py-2">About / Contact</a></li>
+                <li><a href="#" class="block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 text-center mt-2">Login / Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="bg-green-500 text-white py-12 md:py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Solusi Cerdas untuk Pertanian Modern</h1>
+                <p class="text-xl mb-8">Pantau kondisi lahan secara real-time dengan teknologi IoT & AI.</p>
+                <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+                    <a href="#" class="bg-white text-green-700 px-6 py-3 rounded-md text-lg font-semibold hover:bg-gray-200 text-center">Mulai Sekarang</a>
+                    <a href="#" class="border border-white text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-white hover:text-green-700 text-center">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://blob.cloudcomputing.id/images/774c5b3e-c15e-49a3-b796-f8f9d85c19c5/industri-pertanian-l-min.jpg" alt="Smart Farming Illustration" class="rounded-lg shadow-lg w-full h-auto max-w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Fitur Utama SmartFarm AI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">🌡️</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Monitoring Real-time</h3>
+                    <p class="text-gray-600">Pantau suhu, kelembapan, dan kondisi tanah secara real-time.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">🚜</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Manajemen Lahan</h3>
+                    <p class="text-gray-600">Kelola lahan dan tanaman Anda dengan efisien.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">🤖</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Prediksi Hasil Panen</h3>
+                    <p class="text-gray-600">Dapatkan prediksi hasil panen akurat dengan Machine Learning.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dashboard Visualisasi</h3>
+                    <p class="text-gray-600">Visualisasi data sensor yang mudah dipahami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. How It Works / Workflow Section -->
+    <section class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Bagaimana SmartFarm AI Bekerja?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">1️⃣</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pasang Sensor</h3>
+                    <p class="text-gray-600">Instal sensor di lahan pertanian Anda.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">2️⃣</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Kirim Data</h3>
+                    <p class="text-gray-600">Sensor mengirim data ke sistem melalui teknologi IoT.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">3️⃣</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pantau Dashboard</h3>
+                    <p class="text-gray-600">Pantau kondisi lahan Anda dari dashboard yang intuitif.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <div class="text-5xl mb-4">4️⃣</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dapatkan Rekomendasi</h3>
+                    <p class="text-gray-600">Terima rekomendasi dan notifikasi cerdas untuk optimasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Testimonials / Success Stories -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Apa Kata Mereka?</h2>
+            <div class="max-w-3xl mx-auto p-8 bg-green-500 text-white rounded-lg shadow-lg">
+                <img src="testimoni.png" alt="Testimonial Image" class="w-32 h-32 mx-auto rounded-full mb-4 animate-pulse">
+                <p class="text-2xl italic mb-4">"Dengan SmartFarm, hasil panen saya naik 30%! Ini benar-benar mengubah cara saya bertani."</p>
+                <p class="text-lg font-semibold">- Mia Dewi, Petani Sukses</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Call To Action Section -->
+    <section class="py-20 bg-green-700 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">Mulai transformasi pertanian Anda hari ini.</h2>
+            <a href="#" class="bg-white text-green-700 px-8 py-4 rounded-md text-xl font-semibold hover:bg-gray-200">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>                
+                <h3 class="text-2xl font-bold mb-4">SmartFarm AI</h3>
+                <img src="logo.png" alt="SmartFarm AI Logo" class="h-24 mb-4">
+                <p class="text-gray-400">Solusi cerdas untuk pertanian modern dengan teknologi IoT & AI.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Menu Cepat</h3>
+                <ul>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Kontak Kami</h3>
+                <p class="text-gray-400">Email: info@smartfarm.ai</p>
+                <p class="text-gray-400">Phone: +62 812 3456 7890</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><img src="https://img.icons8.com/?size=24&id=uLWV5A9vXIPu&format=png&color=000000" alt="Facebook" class="w-6 h-6"></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><img src="https://img.icons8.com/?size=24&id=phOKFKYpe00C&format=png&color=000000" alt="Twitter" class="w-6 h-6"></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><img src="https://img.icons8.com/?size=24&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" class="w-6 h-6"></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-8 border-t border-gray-700 pt-6">
+            &copy; 2023 SmartFarm AI. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+        });
+    </script>
+
+</body>
+</html>
