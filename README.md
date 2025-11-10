@@ -6,7 +6,7 @@ Selamat datang di repositori frontend SmartFarm! Proyek ini adalah antarmuka pen
 
 Proyek ini merupakan bagian frontend dari sistem SmartFarm. Ini mencakup halaman web statis yang menampilkan informasi terkait pertanian cerdas. File-file seperti `index.html`, `favicon.png`, `logo.png`, `logo1.png`, `petani-female.jpeg`, dan `petani-male.jpg` menunjukkan bahwa ini adalah proyek berbasis web yang sederhana, kemungkinan besar menggunakan HTML, CSS, dan JavaScript untuk fungsionalitasnya.
 
-![Screenshot Aplikasi](Screenshot1.jpg)
+<img width="1364" height="669" alt="image" src="https://github.com/user-attachments/assets/c074fe2d-e672-4368-84c5-a857496fb279" />
 
 ## Cara Menjalankan Proyek
 
