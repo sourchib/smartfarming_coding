@@ -1,0 +1,136 @@
+{
+  "logoNavbarSrc": "logonavbar.png",
+  "logoFooterSrc": "logo.png",
+  "appName": "SmartFarm AI",
+  "footerMotto": "Solusi cerdas untuk pertanian modern dengan teknologi IoT & AI.",
+  "contactEmail": null,
+  "contactPhone": "+62 812 3456 7890",
+  "contactAddress": "Jl. Raya SmartFarm No. 123, Kota Pertanian",
+  "socialMedia": [
+    {
+      "iconSrc": "https://img.icons8.com/?size=24&id=uLWV5A9vXIPu&format=png&color=000000",
+      "link": "#",
+      "alt": "Facebook"
+    },
+    {
+      "iconSrc": "https://img.icons8.com/?size=24&id=phOKFKYpe00C&format=png&color=000000",
+      "link": "#",
+      "alt": "Twitter"
+    },
+    {
+      "iconSrc": "https://img.icons8.com/?size=24&id=BrU2BBoRXiWq&format=png&color=000000",
+      "link": "#",
+      "alt": "Instagram"
+    }
+  ],
+  "features": [
+    {
+      "icon": "🌡️",
+      "title": "Monitoring Real-time",
+      "description": "Pantau suhu, kelembapan, dan kondisi tanah secara real-time."
+    },
+    {
+      "icon": "🚜",
+      "title": "Manajemen Lahan",
+      "description": "Kelola lahan dan tanaman Anda dengan efisien."
+    },
+    {
+      "icon": "🤖",
+      "title": "Prediksi Hasil Panen",
+      "description": "Dapatkan prediksi hasil panen akurat dengan Machine Learning."
+    },
+    {
+      "icon": "📊",
+      "title": "Dashboard Visualisasi",
+      "description": "Visualisasi data sensor yang mudah dipahami."
+    },
+    {
+      "icon": "💧",
+      "title": "Sistem Irigasi Otomatis",
+      "description": "Atur jadwal penyiraman otomatis berdasarkan data sensor."
+    },
+    {
+      "icon": "🌿",
+      "title": "Analisis Kesehatan Tanaman",
+      "description": "Deteksi dini penyakit dan kekurangan nutrisi pada tanaman."
+    }
+  ],
+  "gallery": [
+    {
+      "imageSrc": "gambar1.jpeg",
+      "alt": "SmartFarm Gallery Image 1"
+    },
+    {
+      "imageSrc": "gambar2.jpg",
+      "alt": "SmartFarm Gallery Image 2"
+    },
+    {
+      "imageSrc": "gambar3.jpg",
+      "alt": "SmartFarm Gallery Image 3"
+    },
+    {
+      "imageSrc": "gambar4.jpeg",
+      "alt": "SmartFarm Gallery Image 4"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Apa itu SmartFarm AI?",
+      "answer": "SmartFarm AI adalah solusi pertanian modern yang menggunakan teknologi IoT dan AI untuk memantau kondisi lahan secara real-time dan memberikan rekomendasi cerdas."
+    },
+    {
+      "question": "Bagaimana cara kerja SmartFarm AI?",
+      "answer": "SmartFarm AI bekerja dengan memasang sensor di lahan pertanian Anda, yang kemudian mengirim data ke sistem melalui teknologi IoT. Data ini divisualisasikan di dashboard dan digunakan untuk memberikan rekomendasi optimasi."
+    },
+    {
+      "question": "Apakah SmartFarm AI cocok untuk semua jenis tanaman?",
+      "answer": "Ya, SmartFarm AI dirancang untuk dapat disesuaikan dengan berbagai jenis tanaman dan kondisi lahan. Sistem kami dapat dikonfigurasi untuk memenuhi kebutuhan spesifik pertanian Anda."
+    },
+    {
+      "question": "Berapa biaya berlangganan SmartFarm AI?",
+      "answer": "Kami menawarkan berbagai paket berlangganan yang fleksibel sesuai dengan skala dan kebutuhan pertanian Anda. Silakan hubungi tim penjualan kami untuk informasi lebih lanjut mengenai harga."
+    }
+  ],
+  "pricing": [
+    {
+      "planName": "Basic",
+      "price": "Rp 150.000",
+      "period": "/bulan",
+      "features": [
+        "Monitoring Real-time (1 Sensor)",
+        "Dashboard Dasar",
+        "Laporan Mingguan",
+        "Dukungan Email"
+      ],
+      "buttonText": "Pilih Paket Basic"
+    },
+    {
+      "planName": "Pro",
+      "price": "Rp 350.000",
+      "period": "/bulan",
+      "features": [
+        "Monitoring Real-time (hingga 5 Sensor)",
+        "Dashboard Lanjutan",
+        "Prediksi Hasil Panen",
+        "Sistem Irigasi Otomatis",
+        "Laporan Bulanan",
+        "Dukungan Prioritas"
+      ],
+      "buttonText": "Pilih Paket Pro"
+    },
+    {
+      "planName": "Enterprise",
+      "price": "Hubungi Kami",
+      "period": "",
+      "features": [
+        "Solusi Kustom",
+        "Monitoring Tanpa Batas",
+        "Fitur AI Lengkap",
+        "Manajemen Lahan Ekstensif",
+        "Dukungan 24/7",
+        "Integrasi API"
+      ],
+      "buttonText": "Hubungi Sales"
+    }
+  ]
+}

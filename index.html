@@ -13,8 +13,8 @@
     <header class="bg-white shadow-md py-4">
         <nav class="container mx-auto flex justify-between items-center px-4">
             <div class="flex items-center">
-                <img src="logonavbar.png" alt="SmartFarm AI Logo" class="h-10 mr-2">
-                <span class="text-2xl font-bold text-green-700">SmartFarm AI</span>
+                <img id="navbar-logo" src="logonavbar.png" alt="SmartFarm AI Logo" class="h-10 mr-2">
+                <span id="app-name" class="text-2xl font-bold text-green-700">SmartFarm AI</span>
             </div>
             <!-- Hamburger menu for mobile -->
             <div class="md:hidden">
@@ -66,27 +66,8 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-12">Fitur Utama SmartFarm AI</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <div class="text-5xl mb-4">🌡️</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Monitoring Real-time</h3>
-                    <p class="text-gray-600">Pantau suhu, kelembapan, dan kondisi tanah secara real-time.</p>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <div class="text-5xl mb-4">🚜</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Manajemen Lahan</h3>
-                    <p class="text-gray-600">Kelola lahan dan tanaman Anda dengan efisien.</p>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <div class="text-5xl mb-4">🤖</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Prediksi Hasil Panen</h3>
-                    <p class="text-gray-600">Dapatkan prediksi hasil panen akurat dengan Machine Learning.</p>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <div class="text-5xl mb-4">📊</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dashboard Visualisasi</h3>
-                    <p class="text-gray-600">Visualisasi data sensor yang mudah dipahami.</p>
-                </div>
+            <div id="features-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Features will be loaded dynamically here -->
             </div>
         </div>
     </section>
@@ -132,21 +113,51 @@
         </div>
     </section>
 
-    <!-- 6. Call To Action Section -->
-    <section class="py-20 bg-green-700 text-white text-center">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-8">Mulai transformasi pertanian Anda hari ini.</h2>
-            <a href="#" class="bg-white text-green-700 px-8 py-4 rounded-md text-xl font-semibold hover:bg-gray-200">Daftar Sekarang</a>
+    <!-- 6. Gallery Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Galeri SmartFarm AI</h2>
+            <div id="gallery-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Gallery images will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+    
+        <!-- 8. Pricing Section -->
+    <section class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Pilihan Paket SmartFarm AI</h2>
+            <div id="pricing-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Pricing plans will be loaded dynamically here -->
+            </div>
         </div>
     </section>
 
-    <!-- 7. Footer -->
+    <!-- 7. FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Pertanyaan yang Sering Diajukan</h2>
+            <div id="faq-container" class="max-w-3xl mx-auto text-left">
+                <!-- FAQ items will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Call To Action Section -->
+    <section class="py-20 bg-green-700 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">Mulai transformasi pertanian Anda hari ini.</h2>
+            <a href="register.html" class="bg-white text-green-700 px-8 py-4 rounded-md text-xl font-semibold hover:bg-gray-200">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
     <footer class="bg-gray-800 text-white py-10">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>                
-                <h3 class="text-2xl font-bold mb-4">SmartFarm AI</h3>
-                <img src="logo.png" alt="SmartFarm AI Logo" class="h-24 mb-4">
-                <p class="text-gray-400">Solusi cerdas untuk pertanian modern dengan teknologi IoT & AI.</p>
+                <h3 class="text-2xl font-bold mb-4" id="footer-app-name">SmartFarm AI</h3>
+                <img id="footer-logo" src="logo.png" alt="SmartFarm AI Logo" class="h-24 mb-4">
+                <p id="footer-motto" class="text-gray-400">Solusi cerdas untuk pertanian modern dengan teknologi IoT & AI.</p>
             </div>
             <div>
                 <h3 class="text-xl font-semibold mb-4">Menu Cepat</h3>
@@ -158,12 +169,10 @@
             </div>
             <div>
                 <h3 class="text-xl font-semibold mb-4">Kontak Kami</h3>
-                <p class="text-gray-400">Email: info@smartfarm.ai</p>
-                <p class="text-gray-400">Phone: +62 812 3456 7890</p>
-                <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-gray-400 hover:text-white"><img src="https://img.icons8.com/?size=24&id=uLWV5A9vXIPu&format=png&color=000000" alt="Facebook" class="w-6 h-6"></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><img src="https://img.icons8.com/?size=24&id=phOKFKYpe00C&format=png&color=000000" alt="Twitter" class="w-6 h-6"></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><img src="https://img.icons8.com/?size=24&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram" class="w-6 h-6"></a>
+                <p id="contact-email" class="text-gray-400">Email: info@smartfarm.ai</p>
+                <p id="contact-phone" class="text-gray-400">Phone: +62 812 3456 7890</p>
+                <div id="social-media-links" class="flex space-x-4 mt-4">
+                    <!-- Social media links will be loaded dynamically -->
                 </div>
             </div>
         </div>
@@ -173,16 +182,188 @@
     </footer>
 
     <script>
+        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-    </script>
 
-</body>
-</html>
+        // Dynamic content loading from data.json
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to calculate discount
+            function diskon(originalPrice, discountPercentage) {
+                if (originalPrice === "Hubungi Kami") {
+                    return { discountedPrice: originalPrice, originalPrice: null };
+                }
+                const priceValue = parseInt(originalPrice.replace(/[^0-9]/g, ''));
+                if (isNaN(priceValue)) {
+                    return { discountedPrice: originalPrice, originalPrice: null };
+                }
+                const discountedValue = priceValue * (1 - discountPercentage / 100);
+                return {
+                    discountedPrice: `Rp ${Math.round(discountedValue).toLocaleString('id-ID')}`,
+                    originalPrice: originalPrice
+                };
+            }
+
+            fetch('data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data) { // Only update if data is successfully loaded
+                        // Update Navbar
+                        const navbarLogo = document.getElementById('navbar-logo');
+                        if (navbarLogo && data.logoNavbarSrc) {
+                            navbarLogo.src = data.logoNavbarSrc;
+                        }
+                        const appName = document.getElementById('app-name');
+                        if (appName && data.appName) {
+                            appName.textContent = data.appName;
+                        }
+
+                        // Update Footer
+                        const footerAppName = document.getElementById('footer-app-name');
+                        if (footerAppName && data.appName) {
+                            footerAppName.textContent = data.appName;
+                        }
+                        const footerLogo = document.getElementById('footer-logo');
+                        if (footerLogo && data.logoFooterSrc) {
+                            footerLogo.src = data.logoFooterSrc;
+                        }
+                        const footerMotto = document.getElementById('footer-motto');
+                        if (footerMotto && data.footerMotto) {
+                            footerMotto.textContent = data.footerMotto;
+                        }
+
+                        // Update Contact Info
+                        const contactEmail = document.getElementById('contact-email');
+                        if (contactEmail && data.contactEmail) {
+                            contactEmail.textContent = `Email: ${data.contactEmail}`;
+                        } else if (contactEmail) {
+                            contactEmail.style.display = 'none'; // Hide if null/missing
+                        }
+
+                        const contactPhone = document.getElementById('contact-phone');
+                        if (contactPhone && data.contactPhone) {
+                            contactPhone.textContent = `Phone: ${data.contactPhone}`;
+                        } else if (contactPhone) {
+                            contactPhone.style.display = 'none'; // Hide if null/missing
+                        }
+
+                        // Update Social Media Links
+                        const socialMediaLinksContainer = document.getElementById('social-media-links');
+                        if (socialMediaLinksContainer && data.socialMedia && Array.isArray(data.socialMedia)) {
+                            socialMediaLinksContainer.innerHTML = ''; // Clear existing
+                            data.socialMedia.forEach(social => {
+                                const a = document.createElement('a');
+                                a.href = social.link || '#';
+                                a.className = 'text-gray-400 hover:text-white';
+                                a.target = '_blank'; // Open in new tab
+                                a.rel = 'noopener noreferrer'; // Security best practice
+                                const img = document.createElement('img');
+                                img.src = social.iconSrc;
+                                img.alt = social.alt || 'Social Icon';
+                                img.className = 'w-6 h-6';
+                                a.appendChild(img);
+                                socialMediaLinksContainer.appendChild(a);
+                            });
+                        }
+
+                        // Update Features Section
+                        const featuresContainer = document.getElementById('features-container');
+                        if (featuresContainer && data.features && Array.isArray(data.features)) {
+                            featuresContainer.innerHTML = ''; // Clear existing
+                            data.features.forEach(feature => {
+                                const featureCard = document.createElement('div');
+                                featureCard.className = 'p-6 bg-gray-50 rounded-lg shadow-md text-center';
+                                featureCard.innerHTML = `
+                                    <div class="text-5xl mb-4">${feature.icon}</div>
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-2">${feature.title}</h3>
+                                    <p class="text-gray-600">${feature.description}</p>
+                                `;
+                                featuresContainer.appendChild(featureCard);
+                            });
+                        }
+
+                        // Update Gallery Section
+                        const galleryContainer = document.getElementById('gallery-container');
+                        if (galleryContainer && data.gallery && Array.isArray(data.gallery)) {
+                            galleryContainer.innerHTML = ''; // Clear existing
+                            data.gallery.forEach(item => {
+                                const galleryCard = document.createElement('div');
+                                galleryCard.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+                                galleryCard.innerHTML = `
+                                    <img src="${item.imageSrc}" alt="${item.alt}" class="w-full h-48 object-cover">
+                                `;
+                                galleryContainer.appendChild(galleryCard);
+                            });
+                        }
+
+                        // Update FAQ Section
+                        const faqContainer = document.getElementById('faq-container');
+                        if (faqContainer && data.faq && Array.isArray(data.faq)) {
+                            faqContainer.innerHTML = ''; // Clear existing
+                            data.faq.forEach((item, index) => {
+                                const faqItem = document.createElement('div');
+                                faqItem.className = 'border-b border-gray-200 py-4';
+                                faqItem.innerHTML = `
+                                    <button class="flex justify-between items-center w-full text-lg font-semibold text-gray-800 focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                                        <span>${item.question}</span>
+                                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="mt-2 text-gray-600 hidden">
+                                        <p>${item.answer}</p>
+                                    </div>
+                                `;
+                                faqContainer.appendChild(faqItem);
+                            });
+                        }
+
+                        // Update Pricing Section
+                        const pricingContainer = document.getElementById('pricing-container');
+                        if (pricingContainer && data.pricing && Array.isArray(data.pricing)) {
+                            pricingContainer.innerHTML = ''; // Clear existing
+                            data.pricing.forEach(plan => {
+                                let priceDisplay = `<p class="text-5xl font-extrabold text-green-700 mb-4">${plan.price}<span class="text-xl text-gray-600">${plan.period}</span></p>`;
+
+                                if (plan.planName === "Basic" || plan.planName === "Pro") {
+                                    const { discountedPrice, originalPrice } = diskon(plan.price, 10); // 10% discount
+                                    if (originalPrice) {
+                                        priceDisplay = `
+                                            <p class="text-2xl text-gray-500 line-through mb-1">${originalPrice}<span class="text-base">${plan.period}</span></p>
+                                            <p class="text-5xl font-extrabold text-green-700 mb-4">${discountedPrice}<span class="text-xl text-gray-600">${plan.period}</span></p>
+                                        `;
+                                    }
+                                }
+
+                                const pricingCard = document.createElement('div');
+                                pricingCard.className = 'bg-white rounded-lg shadow-lg p-8 flex flex-col';
+                                pricingCard.innerHTML = `
+                                    <h3 class="text-2xl font-bold text-gray-800 mb-4">${plan.planName}</h3>
+                                    ${priceDisplay}
+                                    <ul class="text-gray-700 text-left mb-6 flex-grow">
+                                        ${plan.features.map(feature => `<li class="flex items-center mb-2"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>${feature}</span></li>`).join('')}
+                                    </ul>
+                                    <a href="#" class="mt-auto bg-green-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-700">${plan.buttonText}</a>
+                                `;
+                                pricingContainer.appendChild(pricingCard);
+                            });
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading app data:', error);
+                    // If data.json fails to load, the static content will remain.
+                    // No need to explicitly revert, as the DOM was never modified.
+                });
         });
     </script>
 
