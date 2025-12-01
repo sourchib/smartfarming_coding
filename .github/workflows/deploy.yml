@@ -1,4 +1,4 @@
-name: Deploy to Server
+name: Deploy HTML Landing Page
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout files
         uses: actions/checkout@v3
 
       - name: Setup SSH key
@@ -18,10 +18,7 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
-      - name: SSH and Deploy
+      - name: Upload HTML to Server
         run: |
-          ssh -o StrictHostKeyChecking=no \
-            -i ~/.ssh/id_rsa \
-            -p ${{ secrets.SSH_PORT }} \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
-            "echo Connected! && ls -la"
+          rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" ./ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/html/
